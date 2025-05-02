@@ -31,11 +31,14 @@ h1 {
 
 #display {
   width: 100%;
+  padding: 10px;
+  display: block;
   font-size: 2rem;
   text-align: center;
   border-radius: 5px;
   margin-bottom: 20px;
   border: 2px solid hsl(0, 0%, 30%);
+  font-family: "Montserrat", sans-serif;
 }
 
 button {
