@@ -20,21 +20,32 @@
     <button id="generateBtn">GENERATE</button>
 
     <div id="optionsContainer">
-      <label for="passwordLength" class="optionLabel">PASSWORD LENGTH</label>
-      <input id="passwordLength" type="number" class="optionInput" min="1" max="20">
+      <div class="optionRow">
+        <label for="includeSymbols" class="optionLabel">INCLUDE SYMBOLS</label>
+        <input id="includeSymbols" type="checkbox" class="optionInput">
+      </div>
 
-      <label for="includeNumbers" class="optionLabel">INCLUDE NUMBERS</label>
-      <input id="includeNumbers" type="checkbox" class="optionInput">
+      <div class="optionRow">
+        <label for="includeNumbers" class="optionLabel">INCLUDE NUMBERS</label>
+        <input id="includeNumbers" type="checkbox" class="optionInput">
+      </div>
 
-      <label for="includeSymbols" class="optionLabel">INCLUDE SYMBOLS</label>
-      <input id="includeSymbols" type="checkbox" class="optionInput">
+      <div class="optionRow">
+        <label for="includeUppercase" class="optionLabel">INCLUDE UPPERCASE</label>
+        <input id="includeUppercase" type="checkbox" class="optionInput">
+      </div>
 
-      <label for="includeLowercase" class="optionLabel">INCLUDE LOWERCASE</label>
-      <input id="includeLowercase" type="checkbox" class="optionInput">
+      <div class="optionRow">
+        <label for="includeLowercase" class="optionLabel">INCLUDE LOWERCASE</label>
+        <input id="includeLowercase" type="checkbox" class="optionInput">
+      </div>
 
-      <label for="includeUppercase" class="optionLabel">INCLUDE UPPERCASE</label>
-      <input id="includeUppercase" type="checkbox" class="optionInput">
+      <div class="optionRow">
+        <label for="passwordLength" class="optionLabel">PASSWORD LENGTH</label>
+        <input id="passwordLength" type="number" class="optionInput" min="1" max="20">
+      </div>
     </div>
+
   </div>
   <script src="script.js"></script>
 </body>

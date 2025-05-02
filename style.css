@@ -63,21 +63,30 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   padding: 20px;
+  font-weight: 600;
   font-size: 1.5rem;
   border-radius: 6px;
   border: 2px solid hsl(0, 0%, 10%);
   background-color: hsl(0, 0%, 75%);
 }
 
+.optionRow {
+  display: flex;
+  flex-direction: row;
+}
+
 .optionLabel {
-  margin: 12px;
-  font-weight: 600;
+  padding: 15px;
+}
+
+.optionInput {
+
 }
 
 #passwordLength {
-  width: 30%;
+  width: 20%;
   border: none;
   font-size: 1.5rem;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 3px;
 }
