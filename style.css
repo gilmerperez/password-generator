@@ -68,10 +68,12 @@ h1 {
   margin-bottom: 20px;
   transition: 0.3s;
   background-color: rgb(40, 40, 40);
+  box-shadow: 5px 5px 3px hsla(0, 0%, 0%, 0.5);
 }
 
 #generateBtn:hover {
   font-size: 1.75rem;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.5);
 }
 
 #optionsContainer {
@@ -88,22 +90,26 @@ h1 {
 }
 
 .optionRow {
+  padding: 10px;
   display: flex;
+  align-items: center;
   flex-direction: row;
+  justify-content: center;
 }
 
-.optionLabel {
-  padding: 15px;
-}
-
-.optionInput {
-
+.optionInput[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  margin-left: 15px;
+  accent-color: black;
 }
 
 #passwordLength {
   width: 20%;
-  border: none;
   font-size: 1.5rem;
+  margin-left: 15px;
   text-align: center;
   border-radius: 3px;
+  border: 1px solid black;
 }
