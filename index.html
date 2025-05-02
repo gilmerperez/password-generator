@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Random Password Generator</title>
 </head>
@@ -16,7 +17,10 @@
   <div id="container">
     <h1>PASSWORD GENERATOR</h1>
 
-    <input id="display" type="text" readonly>
+    <div id="displayContainer">
+      <input id="display" type="text" readonly>
+      <button id="copyBtn"><i class="fa-solid fa-copy"></i></button>
+    </div>
     <button id="generateBtn">GENERATE</button>
 
     <div id="optionsContainer">

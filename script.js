@@ -1,5 +1,7 @@
 // Password output
 const display = document.getElementById("display");
+// Copy password button
+const copyBtn = document.getElementById("copyBtn");
 // Generate Button
 const generateBtn = document.getElementById("generateBtn");
 // Parameters
@@ -45,8 +47,9 @@ function generatePassword(
     return;
   }
 
-  if (allowedChars.length === 0) {
+  if (length <= 0 || allowedChars.length === 0) {
     display.value = "Select at least one character type";
+    copyBtn.style.display = "none";
     return;
   }
 
@@ -55,7 +58,18 @@ function generatePassword(
     password = password + allowedChars[randomIndex];
   }
   display.value = password;
+  copyBtn.style.display = "inline";
 }
+
+copyBtn.addEventListener("click", () => {
+  if (display.value && !display.value.includes("must")) {
+    navigator.clipboard.writeText(display.value);
+    copyBtn.innerHTML = '<i class="fa-solid fa-check"></i>';
+    setTimeout(() => {
+      copyBtn.innerHTML = '<i class="fa-solid fa-copy"></i>';
+    }, 1500);
+  }
+});
 
 generateBtn.addEventListener("click", () => {
   generatePassword(
