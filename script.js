@@ -73,7 +73,7 @@ copyBtn.addEventListener("click", () => {
 
 generateBtn.addEventListener("click", () => {
   generatePassword(
-    passwordLength.value,
+    parseInt(passwordLength.value),
     includeNumbers.checked,
     includeSymbols.checked,
     includeLowercase.checked,
