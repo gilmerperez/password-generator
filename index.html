@@ -7,23 +7,25 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <title>Random Password Generator</title>
 </head>
 
 <body>
   <main id="container">
-    <!-- Title -->
     <h1>PASSWORD GENERATOR</h1>
     <!-- Password Field -->
     <div id="displayContainer">
       <input id="display" type="text" readonly>
-      <button id="copyBtn"><i class="fa-solid fa-copy"></i></button>
+      <!-- Copy Button -->
+      <button id="copyBtn" title="Copy to clipboard">
+        <i class="fa-solid fa-copy"></i>
+      </button>
     </div>
     <!-- Generate Button -->
     <button id="generateBtn">GENERATE</button>
-    <!-- Parameters -->
     <div id="optionsContainer">
       <!-- Symbols -->
       <div class="optionRow">
