@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -24,37 +24,43 @@
         <i class="fa-solid fa-copy"></i>
       </button>
     </div>
+
     <!-- Generate Button -->
     <button id="generateBtn">GENERATE</button>
+
     <div id="optionsContainer">
       <!-- Symbols -->
       <div class="optionRow">
         <label for="includeSymbols" class="optionLabel">INCLUDE SYMBOLS</label>
         <input id="includeSymbols" type="checkbox" class="optionInput">
       </div>
+
       <!-- Numbers -->
       <div class="optionRow">
         <label for="includeNumbers" class="optionLabel">INCLUDE NUMBERS</label>
         <input id="includeNumbers" type="checkbox" class="optionInput">
       </div>
+
       <!-- Uppercase -->
       <div class="optionRow">
         <label for="includeUppercase" class="optionLabel">INCLUDE UPPERCASE</label>
         <input id="includeUppercase" type="checkbox" class="optionInput">
       </div>
+
       <!-- Lowercase -->
       <div class="optionRow">
         <label for="includeLowercase" class="optionLabel">INCLUDE LOWERCASE</label>
         <input id="includeLowercase" type="checkbox" class="optionInput">
       </div>
+
       <!-- Length -->
       <div class="optionRow">
         <label for="passwordLength" class="optionLabel">PASSWORD LENGTH</label>
-        <input id="passwordLength" type="number" class="optionInput" min="1" max="20" value="12">
+        <input id="passwordLength" type="number" class="optionInput" min="1" max="20" value="12" inputmode="numeric" pattern="[0-9]*">
       </div>
     </div>
   </main>
-  <script src="script.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
