@@ -2,11 +2,7 @@
 
 ## Project Summary
 
-Password Generator is a responsive and interactive web application that allows users to instantly generate secure, random passwords tailored to their specific needs. Users can customize the password by selecting the desired length and choosing whether to include uppercase letters, lowercase letters, numbers, and special symbols.
-
-The primary goal of this project is to offer a simple yet powerful tool for generating strong passwords to enhance digital security. Built using vanilla HTML, CSS, and JavaScript, the app demonstrates how core web technologies can be combined to create an effective user interface with real functionality — no frameworks or libraries required.
-
-The application features real-time password creation with immediate display and copy-to-clipboard functionality, all within a clean and mobile-friendly layout. It's ideal for individuals who need secure passwords for accounts, forms, or sensitive platforms and want full control over their composition.
+Password Generator is a fully responsive web application that allows users to generate strong, random passwords with customizable options such as length, uppercase and lowercase letters, numbers, and symbols. Built with HTML, CSS, and JavaScript, it features real-time generation, clipboard support, and a clean, mobile-friendly interface—perfect for enhancing digital security without relying on external libraries.
 
 ## Table of Contents
 
